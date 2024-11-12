@@ -19,11 +19,11 @@ function App() {
   function addQuiz(quiz){
     setQuiz((prevQuizzes)=>[...prevQuizzes, quiz])
   }
-  function updateQuiz(updatedQuiz) {
-    setQuiz((prevQuizzes) => 
-      prevQuizzes.map((quiz) => (quiz.id === updatedQuiz.id ? updatedQuiz : quiz))
-    );
-  }
+  // function updateQuiz(updatedQuiz) {
+  //   setQuiz((prevQuizzes) => 
+  //     prevQuizzes.map((quiz) => (quiz.id === updatedQuiz.id ? updatedQuiz : quiz))
+  //   );
+  // }
 
   function removeQuiz(id) {
     setQuiz((prevQuizzes) => prevQuizzes.filter((quiz) => quiz.id !== id));
